@@ -351,6 +351,3 @@ MigrationBackup/
 
 # Ignore machine connect details
 .vscode/
-
-#file config
-include/config.php
