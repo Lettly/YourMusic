@@ -4,7 +4,7 @@
 Request a song with Spotify API
 
 <h1>Requirements</h1>
-For setup the projects, you need to create a spotify applications in your developer dashboard.
+For setup the project, you need to create a spotify applications in your developer dashboard.
 
 <a href="https://developers.spotify.com/dashboard" target="_blank">https://developers.spotify.com/dashboard</a>
 
