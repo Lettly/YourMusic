@@ -1,6 +1,6 @@
 <?php
-    require $_SERVER["DOCUMENT_ROOT"]."/include/config.php";
-    require $_SERVER["DOCUMENT_ROOT"].'/vendor/autoload.php';
+     require '../../include/config.php';
+     require '../../vendor/autoload.php';
 
     $session = new SpotifyWebAPI\Session(
         $spotify_client_id,
@@ -14,16 +14,9 @@
 
     $accessToken = $session->getAccessToken();
     $refreshToken = $session->getRefreshToken();
-
-    
-    // Store the access and refresh tokens somewhere. In a database for example.
-    $servername = "localhost";
-    $username = "yourmusic";
-    $password = "wgu4cp4MU7t3mH44";
-    $dbname = "yourmusic";
     
     // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($mysql_ip, $mysql_username, $mysql_password, $mysql_dbname);
     // Check connection
     if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

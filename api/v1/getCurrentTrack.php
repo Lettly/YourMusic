@@ -1,6 +1,6 @@
 <?php
-    require $_SERVER["DOCUMENT_ROOT"]."/include/config.php";
-    require $_SERVER["DOCUMENT_ROOT"] . '/vendor/autoload.php';
+    require "../../include/config.php";
+    require "../../vendor/autoload.php";
 
     $session = new SpotifyWebAPI\Session(
         $spotify_client_id,
