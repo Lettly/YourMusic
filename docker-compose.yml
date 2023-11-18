@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+    php:
+        image: php:7.2-apache # remember to comment this line
+        build: .
+        ports:
+            - 8080:80
+        volumes:
+            - ./:/var/www/html/
+        environment:
+            - spotify_client_id=0a4b4b0b0b9e4b6e9b0b0b0b0b0b0b0b
+            - spotify_client_secret=0a4b4b0b0b9e4b6e9b0b0b0b0b0b0b0b
+            - spotify_redirect_uri=http://example.com:8080/api/v1/callback.php

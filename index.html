@@ -126,23 +126,21 @@
 
                         <div class="col-auto" id="closeSearchButton" style="display: none;">
                             <button type="button" class="btn btn-danger" style="height: 50px; border-radius: 0;"
-                                onclick="closeSearch()">X</button>
+                            onclick="closeSearch()">X</button>
                         </div>
 
                         <div class="col">
-                            <input type="text" id="songSearch-input" class="form-control"
-                                placeholder="Cosa vuoi ascoltare?" style="border-radius: 0!important;"
-                                autocomplete="off">
+                            <input type="text" id="songSearch-input" class="form-control" placeholder="Cosa vuoi ascoltare?"
+                            style="border-radius: 0!important;" autocomplete="off">
                         </div>
 
                     </div>
-
+                    
                 </div>
 
             </div>
 
-            <div class="card w-100" id="out" style="display: none; cursor: pointer; border-top: 0; border-radius: 0;">
-            </div>
+            <div class="card w-100" id="out" style="display: none; cursor: pointer; border-top: 0; border-radius: 0;"></div>
 
         </div>
 
@@ -529,7 +527,7 @@
                 height: "50px"
             });
             $('#closeSearchButton').addClass('pr-0');
-            $('#closeSearchButton').show('fast', function () {
+            $('#closeSearchButton').show('fast', function() {
                 $('#songSearch-input').parent().addClass('pl-0');
             });
         }
