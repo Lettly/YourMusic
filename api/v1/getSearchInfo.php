@@ -1,5 +1,4 @@
 <?php
-require $_SERVER["DOCUMENT_ROOT"] . "/include/config.php";
 require $_SERVER["DOCUMENT_ROOT"] . '/vendor/autoload.php';
 
 session_start();
