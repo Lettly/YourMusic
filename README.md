@@ -24,6 +24,7 @@ After this, you need to go to auth.php via browser and connect your spotify acco
 To start the project, you need to run the command:
 
 ```bash
+chmod 777 api/v1/data
 docker-compose up -d
 ```
 
